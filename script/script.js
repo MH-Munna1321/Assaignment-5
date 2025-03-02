@@ -13,36 +13,36 @@ document.getElementById("colorChange-btn").addEventListener("click", function(ev
 
 
 
-const completeButton = document.querySelectorAll(".complete-btn");
-let clickCount = 0;
-for(const btn of completeButton){
-    btn.addEventListener("click",function(event){
+// const completeButton = document.querySelectorAll(".complete-btn");
+// let clickCount = 0;
+// for(const btn of completeButton){
+//     btn.addEventListener("click",function(event){
       
-        const headValue = getInnerText("head-value");
-        const taskValue = getInnerText("task-value")
-        const completeNumber = 1;
+//         const headValue = getInnerText("head-value");
+//         const taskValue = getInnerText("task-value")
+//         const completeNumber = 1;
     
-        const HeadResult = headValue + completeNumber;
-        const taskResult = taskValue - completeNumber
-        document.getElementById("head-value").innerText = HeadResult;
-        document.getElementById("task-value").innerText = taskResult;
-        event.target.disabled = true;
-        alert("Board updated Successful")
-        clickCount++;
-        if(clickCount === completeButton.length){
-            alert("Congrats")
-        }
-        const currentTime = new Date();
-        const hours = currentTime.getHours();
-        const minutes = currentTime.getMinutes();
-           const container = document.getElementById("history-container");
-        const p = document.createElement("p");
-        p.innerText = ` You have Complete The Task  ${hours}: ${minutes}`
-        container.appendChild(p)
+//         const HeadResult = headValue + completeNumber;
+//         const taskResult = taskValue - completeNumber
+//         document.getElementById("head-value").innerText = HeadResult;
+//         document.getElementById("task-value").innerText = taskResult;
+//         event.target.disabled = true;
+//         alert("Board updated Successful")
+//         clickCount++;
+//         if(clickCount === completeButton.length){
+//             alert("Congrats")
+//         }
+//         const currentTime = new Date();
+//         const hours = currentTime.getHours();
+//         const minutes = currentTime.getMinutes();
+//            const container = document.getElementById("history-container");
+//         const p = document.createElement("p");
+//         p.innerText = ` You have Complete The Task  ${hours}: ${minutes}`
+//         container.appendChild(p)
       
         
-    })
-}
+//     })
+// }
 
 // activity section
 

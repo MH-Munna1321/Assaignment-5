@@ -18,9 +18,9 @@
 }
 </style>
 </head>
-<body class="poppins-medium md:container mt-0 mx-auto px-5 bg-orange-300 px-10">
-    <header>
-        <nav class="flex items-center justify-between mb-4 pt-3 bg-white px-4 py-4 rounded-lg ">
+<body class="poppins-medium md:container mt-0 mx-auto px-10 min-h-screen min-w-screen ">
+    <header class="w-full max-w-7xl mx-auto pt-4 ">
+        <nav class="flex items-center justify-between mb-4 pt-3 px-4 py-4 rounded-lg bg-blue-100 ">
         <div class="flex items-center gap-2">
             <img src="assets/logo.png" alt="">
             <h1 class="text-4xl">Dev <span class="font-bold">Board</span></h1>
@@ -28,22 +28,22 @@
         <div class="flex gap-12 items-center">
             <div class="flex  gap-3">
                 <i class=" text-3xl fa-solid fa-square-check text-blue-600 "></i>
-                <h3 id="head-value" class=" text-3xl text-black font-extrabold">22</h3>
+                <h3 id="headValue" class=" text-3xl text-black font-extrabold">22</h3>
             </div>
             <img id="colorChange-btn" src="assets/theme-btn.png" alt="">
         </div>
         </nav>
     </header>
 
-    <main class="flex justify-between">
+    <main class="flex justify-between max-w-7xl mx-auto">
         <section>
-            <div class="flex justify-between mb-4">
+            <div class="flex justify-between mb-4 gap-4">
                 <!-- task -->
-            <div class="flex items-center gap-2  bg-blue-100 px-7 py-4 rounded-xl">
+            <div class="flex items-center gap-2  bg-blue-100 px-8 py-4 rounded-xl">
                 <span class="text-3xl fa-solid fa-square-check  text-blue-600"></span>
                 <div>
                 <p class="text-lg text-gray-600">Task Assigned</p>
-                <h2  id="task-value" class="font-extrabold text-3xl">6</h2>
+                <h2  id="taskValue" class="font-extrabold text-3xl">6</h2>
                 </div>
             </div>
             <!-- discover -->
@@ -52,89 +52,89 @@
              <p class="text-2xl  text-white">Discover Something <br> New Today!</p>
              </div>
              <!-- date -->
-              <div class="flex items-center   bg-blue-100 px-7 py-4 rounded-xl">
-                <img src="assets/calender.png" alt="">
-                <p id="set-date"></p>
+              <div class="flex items-center   bg-blue-100 px-4 py-4 rounded-xl">
+                <img class="mr-3" src="assets/calender.png" alt="">
+                <p class="text-base font-bold" id="set-date"></p>
             </div>
             </div>
             <!-- task section -->
              <div class="grid grid-cols-3 gap-3">
                 <!-- task-1 -->
              <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">ShopEase</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Fix Mobile Button Issue </h2>
-                <p class="text-base mb-4 ">Debug using Chrome <br> DevTools, check for overlapping </p>
+                <button class="text-sm btn mb-4 ">ShopEase</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Fix Mobile Button Issue </h2>
+                <p class="text-sm mb-4 ">Debug using Chrome <br> DevTools, check for overlapping </p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button  class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn">Completed</button>
+                    <button  class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
                </div>
              </div>
              <!-- task-2 -->
              <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">CloudSync</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Add Dark Mode </h2>
-                <p class="text-base mb-4">Store the user's preference in localStorage, update CSS varia</p>
+                <button class="text-sm btn mb-4 ">CloudSync</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Add Dark Mode </h2>
+                <p class="text-sm mb-4">Store the user's preference in localStorage, update CSS varia</p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button  class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn">Completed</button>
+                    <button  class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
                </div>
              </div>
             <!-- task-3 -->
             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">SwiftPay</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Optimize  Home page</h2>
-                <p class="text-base mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure  </p>
+                <button class="text-sm btn mb-4 ">SwiftPay</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Optimize  Home page</h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlapping elements, </p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn ">Completed</button>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn ">Completed</button>
                </div>
              </div>
             <!-- task-4 -->
             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">Meta</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Add new emoji 🤲 </h2>
-                <p class="text-base mb-4">Debug using Chrome DevTools, check for overlappin </p>
+                <button class="text-sm btn mb-4 ">Meta</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Add new emoji 🤲 </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlappin </p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn">Completed</button>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
                </div>
              </div>
             <!-- task-5 -->
             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">Google LLC</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Integrate OpenAI API </h2>
-                <p class="text-base mb-4">Debug using Chrome DevTools, check for overlap </p>
+                <button class="text-sm btn mb-4 ">Google LLC</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Integrate OpenAI API </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlap </p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn">Completed</button>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
                </div>
              </div>
             <!-- task-6 -->
             <div class=" bg-blue-100 px-6 py-6 rounded-2xl">
-                <button class="text-base btn mb-4 ">Glassdoar</button>
-                <h2 class="text-2xl font-semibold mb-4 task-head">Improve Job searching </h2>
-                <p class="text-base mb-4">Debug using Chrome DevTools, check for overlappin</p>
+                <button class="text-sm btn mb-4 ">Glassdoar</button>
+                <h2 class="text-xl font-semibold mb-4 task-head">Improve Job searching </h2>
+                <p class="text-sm mb-4">Debug using Chrome DevTools, check for overlappin</p>
                <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm">Deadline</p>
                     <p class="text-base font-bold">21 March 2025</p>
                     </div>
-                    <button class="btn px-4 py-2 bg-indigo-700 rounded-md complete-btn">Completed</button>
+                    <button class="btn text-white px-4 py-2 btn-comp bg-indigo-700 rounded-md complete-btn">Completed</button>
                </div>
              </div>
              </div>
@@ -143,21 +143,22 @@
         </section>
 
         <!-- history -->
-         <section class="px-5 w-2/6 bg-white py-3 mx-6 rounded-xl">
+         <section class="px-5 w-2/6 bg-blue-100 py-3 ml-3 rounded-xl">
             <div class="flex items-center gap-3 justify-center">
                 <img src="assets/activity.png" alt="">
                 <h3 class="text-base ">Activity Log</h3>
                 </div>
                 <div class="flex justify-center">
-                    <button class="btn bg-blue-600 text-white px-5 py-5 rounded-lg mt-3 text-center">Clear History</button>
+                    <button id="clear-btn" class="btn bg-blue-600 text-white px-5 py-5 rounded-lg mt-3 text-center">Clear History</button>
                 </div>
-                <div id="history-container">
-
+                <div id="history-container" class="mt-4 rounded-md flex flex-col gap-4">
+                    
                 </div>
          </section>
     </main>
 </body>
 <script src="./script/script.js"></script>
 <script src="./script/utilities.js"></script>
+<script src="script/completeButton.js"></script>
 </html>
 
